@@ -1,0 +1,19 @@
+<nav class="navbar">
+    <div ><a routerLink="/">LogOut</a></div>
+    
+</nav>
+<table>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Phone No.</th>
+    </tr>
+    <tr *ngFor="let userlist of list">
+        <td>{{userlist.fname}}</td>
+        <td>{{userlist.lname}}</td>
+        <td>{{userlist.phone}}</td>
+        <td><button>Edit</button></td>
+        <td><button>Delete</button></td>
+    </tr>
+</table>
+
